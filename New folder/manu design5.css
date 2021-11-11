@@ -1,0 +1,128 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+}
+.body{
+    background-size:280%;
+    background-position:-400px 0px;
+}
+.container {
+    width: 100%;
+    padding-right: 15x;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.manu{
+    background-color:#3A59D5;;
+    width:100%;
+    height:80px;
+    display:flex;
+    align-items:center;
+    justify-content: space-between ;
+}
+.active{
+    background-color:#AFBBEE;
+    border-radius:3px;
+    
+}
+
+.manu ul{
+    list-style:none;
+    display:flex;
+}
+.manu ul li{
+    padding:25px 30px;
+    position:relative;
+    
+}
+.logo{
+    background: url('/images/logo.png') no-repeat center;
+    background-size: auto;
+    background-size: 180px 35px;
+    width: 181px;
+    height: 36px;
+    padding:0 5px;
+}
+.manu ul li a{
+    text-decoration:none;
+    font-size:25px;
+    color:white;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-transform:uppercase;
+    padding:5px;
+    transition:all 0.3s;
+}
+.manu ul li a:hover{
+    color:red;
+}
+.manu ul li:hover .sub-manu{
+    display:block;
+    position:absolute;
+    background-color:green;
+    margin-top:-6px;
+    margin-left:-10px; 
+     position:absolute;
+    
+    left:20px;
+    top:100%;
+    
+}
+.manu ul li:hover .sub-manu ul{
+    display:block;
+    margin:10px;
+    
+}
+.manu ul li:hover .sub-manu ul li{
+    width:150px;
+    padding:10px;
+    border-bottom:dotted 1px white;
+    background:transparent;
+    text-transform:uppercase;
+     border-radius:0px;
+}
+
+
+.sub-manu{
+    display:none;
+   
+   
+}
+
+.sub-manu ul {
+    display:block;
+    margin:30px;
+    width:150px;
+    padding:15px;
+}
+.sub-manu ul li{
+    width:250px;
+    padding:15px;
+}
+
+.fa{
+    float:right;
+    margin-left:3px;
+    padding-top:0px;
+}
+.sub-manu2{
+    display:none;
+    
+}
+
+
+
+.sub-manu ul li:hover .sub-manu2{
+    display:block;
+    position:absolute;
+    top:0;
+    left:143px;
+    background-color:yellow;
+    
+}
+.main{
+    width:400px;
+    margin:100px auto 0px auto;
+}
+
